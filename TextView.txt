@@ -1,0 +1,49 @@
+package space.sarycheva.mypoem
+
+import android.os.Bundle
+import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
+import kotlin.math.log
+
+const val TAG = "MainActivity"
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+        Log.d(TAG,"Мы стареем не от старости,\n"
+                + "Не от прожитых годов.")
+    }
+
+    override fun onStart() {
+        super.onStart()
+        Log.d(TAG,"Мы стареем от усталости,\n"
+                + "От обид и от грехов")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.d(TAG,"От тоски и обреченности,\n"
+                + "От несбывшейся любви,")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.d(TAG,"От житейской безысходности,\n"
+        + "Повседневной суеты")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.d(TAG,"От забот,что только множатся,\n"
+        + "От проблем, что не решаются")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d(TAG, "Мы стареем раньше возраста,\n"
+        +"Ибо души иссушаются")
+    }
+
+
+
+}
